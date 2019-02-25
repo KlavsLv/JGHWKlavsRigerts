@@ -1,5 +1,7 @@
 package lv.homework1;
 
+//Use only english for class names, code should be compilable
+//class name should mach with file name
 public class Kalkulators {
 
 
