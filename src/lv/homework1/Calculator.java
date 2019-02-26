@@ -1,24 +1,39 @@
-package lv.homework1;
+import java.util.*;
 
-//Use only english for class names, code should be compilable
-//class name should mach with file name
-public class Kalkulators {
+public class Calculator{
 
+    public static void main(String[] args){
+        int num1 = 0;
+        int num2 = 0;
+        char operator;
+        double answer = 0.0;
 
-    public class Kalkulators{public static void main(String[]args)}}
-    int firstNumber = 10;
-    int secondNumber = 5;
+        Scanner scanObject = new Scanner(System.in);
 
-    int sumResult = firstNumber + secondNumber;
-    int subtractResult = firstNumber - secondNumber;
-    int divideResult = firstNumber / secondNumber;
-    int multiplyResult = firstNumber*secondNumber;}
+        System.out.println("Please enter first number: ");
+        num1 = scanObject.nextInt();
+        System.out.println("Please enter second number: ");
+        num2 = scanObject.nextInt();
+        System.out.println("What operation? ");
+        operator  = scanObject .next().charAt(0);
 
-    public class Klakulators
-        public static void main(String[] args)
+        switch(operator) {
+            case '+':
+                answer = num1 + num2;
+                break;
 
-        system.out.println("Sum result:" + sumResult);
-        system.out.println("Subtract result:" + subtractResult);
-        system.out.println("divide result:" + divideResult);
-        system.out.println("Multiply result:" + multiplyResult);
+            case '-':
+                answer = num1 - num2;
+                break;
+
+            case '*':
+                answer = num1 * num2;
+                break;
+
+            case '/':
+                answer = num1 / num2;
+                break;
+        }
     }
+}
+// how can i make the calculator answer me ?
